@@ -5,7 +5,7 @@ import java.util.Map;
 public class HashCollisionExample {
     public static void main(String[] args) throws Exception {
         Map<CustomKey, String> map = new HashMap<>();
-        for (int i=1; i < 10; i++) {
+        for (int i=1; i < 12; i++) {
             CustomKey key = new CustomKey(i);
             map.put(key, "Value" + i);
             System.out.println("i = " + i);
@@ -31,7 +31,7 @@ public class HashCollisionExample {
 
         System.out.println("Node type - " + node.getClass().getSimpleName());
 
-        System.out.println("Bucket index =" + index);
+        System.out.println("Bucket index = " + index);
     }
 }
 
